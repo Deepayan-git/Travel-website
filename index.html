@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>D.Doors</title>
-  
+
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
 
@@ -42,18 +44,66 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Bloogs</a>
+            <a class="nav-link" href="#blogs">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about">About Us</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">
-            Search
+          
+
+        <!-- <button class="btn btn-outline-success" type="submit">
+            Sing in
+          </button> -->
+
+        <div class="sign">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Sign In
           </button>
-        </form>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Google Account</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                  <div class="form">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </nav>
@@ -70,17 +120,18 @@
           aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner testing">
+
         <div class="carousel-item active">
+          <div class="tagline">Lets Travel Us</div>
+          <img src="ii.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
           <div class="tagline2">Lets Travel Us</div>
           <img src="c.1.JPG" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <div class="tagline"></div>
+          <div class="tagline3">Lets Travel Us</div>
           <img src="n.1.JPG" class="d-block w-100" alt="..." />
-        </div>
-        <div class="carousel-item">
-          <div class="tagline3"></div>
-          <img src="m.1.JPG" class="d-block w-100" alt="..." />
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -96,7 +147,7 @@
     </div>
   </div>
 
-  <div class="mv">Most visitable place</div>
+  <div class="mv" id="explore">Most visitable place</div>
 
   <!--card-->
   <div class="cardd">
@@ -162,7 +213,7 @@
             <p class="card-text">
               "Experience Japan's blend of tradition and modernity with
               ancient temples, cherry blossoms, and vibrant cities like Tokyo
-              and Kyoto." ladakha best travel in 2line
+              and Kyoto." 
             </p>
           </div>
         </div>
@@ -184,7 +235,7 @@
   </div>
 
   <!--gallery-->
-  <div class="mm">Gallery</div>
+  <div class="mm"id="gallery">Gallery</div>
 
   <div class="carddd">
     <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -248,7 +299,7 @@
   <br>
   <br>
 
-  <div class="b">Blog</div>
+  <div class="b" id="blogs">Blog</div>
 
 
   <!--bloog-->
@@ -256,7 +307,7 @@
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card">
-          <img src="gr.png" class="card-img-top" alt="...">
+          <img src="all.jpg" class="card-img-top" alt="...">
           <div class="card-body">
 
             <p class="card-text">Dhigurah island is probably the most beautiful island you’ve never heard of in the
@@ -266,7 +317,7 @@
       </div>
       <div class="col">
         <div class="card">
-          <img src="al.png" class="card-img-top" alt="...">
+          <img src="vh.jpg" class="card-img-top" alt="...">
           <div class="card-body">
 
             <p class="card-text">Even though Aruba is mainly known for its beaches and other fun activities, there are
@@ -298,41 +349,31 @@
   </div>
 
   <!--bloog2-->
-  <div class="main">
+  <div class="con">
     <div class="left">
-      <img src="lo.jpg" alt="">
-
+      <img src="jj.jpg" alt="">
     </div>
 
-    <div id="right">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempore exercitationem praesentium.
-        Aspernatur provident quae iure, ducimus distinctio quibusdam saepe velit repellat temporibus praesentium aliquid
-        culpa dolorum? Repellendus, iste quia.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam minima veniam odit consequuntur totam repellendus
-        praesentium eligendi similique maiores corrupti quisquam, dolor cumque mollitia
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint sunt reprehenderit in blanditiis consequuntur
-        deserunt, eligendi alias illum, et, labore eum. Nesciunt laudantium corporis natus harum neque quo non impedit.
 
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora laboriosam at quam veritatis. In atque iste
-        quasi nam nesciunt debitis, placeat mollitia provident labore eum ipsam error, veniam veritatis ab?
+    <div class="right">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aliquam voluptates? Ratione in, rerum quisquam
+        soluta temporibus voluptates minus dicta accusantium qui consequuntur assumenda dignissimos iusto provident nam
+        exercitationem at!
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid reprehenderit obcaecati unde aliquam nisi
-        alias! Nesciunt quibusdam illo enim exercitationem aut corporis, consectetur asperiores pariatur ex molestiae
-        quidem fugit nulla!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid velit, repellat eius unde deleniti suscipit hic
+        sed molestias quisquam corporis laboriosam obcaecati ut aspernatur culpa assumenda facere. Ad, illum amet?
 
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum reiciendis reprehenderit ratione asperiores
-        blanditiis sed enim nulla ipsum quia! Assumenda quas fugiat vero suscipit adipisci cumque nostrum quia
-        asperiores autem?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quia nihil sunt, aliquam accusantium, ut dolore
+        veritatis omnis necessitatibus culpa aspernatur labore consequatur. Voluptatum harum dolore minus maiores, ad
+        molestias.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In fuga quos quae architecto molestiae commodi officia
+        laudantium! Suscipit, dicta vel quae impedit quidem obcaecati debitis illum sed ullam odit veritatis?
 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut labore rerum laborum et nemo ipsam temporibus
-        animi culpa! Aperiam laudantium temporibus officiis quos accusantium deleniti quod perspiciatis aspernatur
-        tempore optio?
-
-
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis qui quia optio velit, debitis, suscipit non
-        assumenda possimus, adipisci aliquid consequatur cum. Ullam reiciendis, assumenda consequatur expedita molestias
-        temporibus tempora.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque error exercitationem temporibus aut, officia
+        ipsa maxime est corrupti, excepturi accusamus non quis vero quaerat molestiae suscipit asperiores. Illum,
+        doloremque nobis.
       </p>
     </div>
   </div>
@@ -342,7 +383,7 @@
 
 
 
-  <!--card_2-->
+  <!--reviews-->
   <div class="card2">
     <div class="card">
       <div class="card-header">Reviews</div>
@@ -364,7 +405,7 @@
   </div>
 
 
-  <div class="aa">About</div>
+  <div class="aa" id="about">About</div>
 
 
   <!--about-->
@@ -380,37 +421,49 @@
           </div>
 
           <!-- Text -->
-          <div class="col-lg-6 offset-lg-6 py-5 ps-lg-5">
-            <h1>Personal Experiences</h1>
+          <div class="pcc">
+            <div class="col-lg-6 offset-lg-6 py-5 ps-lg-5">
+              <h1>Personal Experiences</h1>
 
-            <p>I first fell in love with travel on a solo road trip across Iceland in 2016. My budget was small, so I slept in the back of a rental car for 1 month while I drove 7,000 kilometers around the country, filming all the scenic places in Iceland.
-              One of my first videos racked up a few million views and was featured on international TV by BBC Travel. 
-              Since then I've solo traveled to many developing countries, including almost every country in Asia, Central America, and the Middle East.
-              I experienced the 7.0 Lombok earthquake in Indonesia in 2018, the bombings in Bangkok in 2019, and a fair share of scams.
-              In 2018, I traveled to 24 countries in one year, which is a personal record so far! I did this on a pretty modest budget and rarely spent more than $30/day on my travels, including lodging and food.
-              I haven't been everywhere, but it's on my list! I'm always looking for new adventures.
-              I hope my travel blog can help and inspire you in your own journeys as well!</p>
-            
+              <p>I first fell in love with travel on a solo road trip across Iceland in 2016. My budget was small, so I
+                slept in the back of a rental car for 1 month while I drove 7,000 kilometers around the country, filming
+                all the scenic places in Iceland.
+                One of my first videos racked up a few million views and was featured on international TV by BBC Travel.
+                Since then I've solo traveled to many developing countries, including almost every country in Asia,
+                Central America, and the Middle East.
+                I experienced the 7.0 Lombok earthquake in Indonesia in 2018, the bombings in Bangkok in 2019, and a
+                fair
+                share of scams.
+                In 2018, I traveled to 24 countries in one year, which is a personal record so far! I did this on a
+                pretty
+                modest budget and rarely spent more than $30/day on my travels, including lodging and food.
+                I haven't been everywhere, but it's on my list! I'm always looking for new adventures.
+                I hope my travel blog can help and inspire you in your own journeys as well!</p>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Two column: Fluid image right, contained text left -->
-    <div class="container-fluid position-relative half-fluid">
-      <div class="container">
-        <div class="row">
+  <!-- Two column: Fluid image right, contained text left -->
+  <div class="container-fluid position-relative half-fluid">
+    <div class="container">
+      <div class="row">
 
-          <!-- Image -->
-          <div class="col-lg-6 position-lg-absolute right-half h-100">
-            <div class="boat"></div>
-          </div>
+        <!-- Image -->
+        <div class="col-lg-6 position-lg-absolute right-half h-100">
+          <div class="boat"></div>
+        </div>
 
-          <!-- Text -->
+        <!-- Text -->
+        <div class="pc">
           <div class="col-lg-6 py-5 pe-lg-5">
             <h1>Travel Blog</h1>
-            
-            <p>It hasn't always been easy, but over the years I've been blessed with some amazing experiences, including:
+
+            <p>It hasn't always been easy, but over the years I've been blessed with some amazing experiences,
+              including:
 
               • Hiking to Mount Everest Base Camp in the Himalayas,
               • Climbing an erupting volcano in Guatemala,
@@ -420,12 +473,14 @@
               • Dining on tarantulas and scorpions in Cambodia,
               • Riding a camel to the Great Pyramids of Giza in Egypt,
               • Skydiving over paradise in Oahu Hawaii,
-              • And visiting some timeless world monuments like the Taj Mahal, Tikal, Bagan, Machu Picchu, Hagia Sophia, Angkor Wat, Petra, and Himeji Castle.</p>
-            
+              • And visiting some timeless world monuments like the Taj Mahal, Tikal, Bagan, Machu Picchu, Hagia Sophia,
+              Angkor Wat, Petra, and Himeji Castle.</p>
+
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 
@@ -493,23 +548,23 @@
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
           <p class="copyright-text">
-            Copyright &copy; 2017 All Rights Reserved.
+            Copyright &copy; 2025 All Rights Reserved.
           </p>
         </div>
 
         <div class="col-md-4 col-sm-6 col-xs-12">
           <ul class="social-icons">
             <li>
-              <a class="facebook" href="#" class="fa fa-facebook"></i></a></li>
+              <a class="facebook" href="https://www.facebook.com/share/14omLbYnVQ/"><i class="fa fa-facebook"></i></a>
             </li>
             <li>
               <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
             </li>
             <li>
-              <a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+              <a class="dribbble" href="https://github.com/Deepayan-git"><i class="fa fa-dribbble"></i></a>
             </li>
             <li>
-              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              <a class="linkedin" href="https://www.linkedin.com/in/deepayan-chakraborty-98aa9b200/"><i class="fa fa-linkedin"></i></a>
             </li>
           </ul>
         </div>
